@@ -1,0 +1,19 @@
+
+html head link
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'welcome/style.css' %}" />
+</head>
+<body>
+<hr>
+<p>  </p>
+<hr>
+{% block main_content %}
+{% endblock %}
+{% include "welcome/footer.html" %}
+</body>
+</html>
